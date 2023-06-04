@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_account"
+            android:title="List of Account"
+            android:icon="@drawable/baseline_edit_note_24"/>
+        <item
+            android:id="@+id/nav_records"
+            android:title="Records"
+            android:icon="@drawable/baseline_event_24"/>
+        <item
+            android:id="@+id/nav_news"
+            android:title="News"
+            android:icon="@drawable/baseline_folder_copy_24"/>
+        <item
+            android:id="@+id/nav_contactus"
+            android:title="Contact Us"
+            android:icon="@drawable/baseline_phone_24"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/baseline_logout_24"/>
+    </group>
+
+</menu>

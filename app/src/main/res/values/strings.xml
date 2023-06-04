@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PlatformAndroRahmi2</string>
+    <string name="buka">Buka</string>
+    <string name="tutup">Tutup</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_title">About Money Manager</string>
+    <string name="content">Money management is crucial in achieving financial goals and securing a stable future. To facilitate effective money management, various personal finance apps are available in the market. One such app is Monifier, which provides users with tools to monitor and manage their finances effectively. The app allows users to track expenses, set budgets, and plan their investments, all in one place. With Monifier, users can gain insights into their spending patterns and identify areas where they can cut costs and save more. Overall, Monifiers intuitive interface and powerful features make it an excellent tool for anyone looking to take control of their finances.</string>
+</resources>
