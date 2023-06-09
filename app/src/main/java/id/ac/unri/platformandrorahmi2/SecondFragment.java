@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +62,29 @@ public class SecondFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false);
+        View view = inflater.inflate(R.layout.fragment_second, container, false);
+
+        ListView listView = view.findViewById(R.id.listview);
+        ArrayList<ListData> listData = new ArrayList<>();
+
+        ListData data1, data2, data3, data4, data5, data6;
+        data1 = new ListData("Coffee", "Rp 18.000", "07/04/2023", R.drawable.coffee);
+        data2 = new ListData("Groceries", "Rp 45.000", "07/04/2023", R.drawable.carrot);
+        data3 = new ListData("Breakfast", "Rp 7.000", "08/04/2023", R.drawable.bread);
+        data4 = new ListData("Cat Food", "Rp 20.000", "09/04/2023", R.drawable.kitty);
+        data5 = new ListData("Stationery", "Rp 2.000", "10/04/2023", R.drawable.pen);
+        data6 = new ListData("Fuel", "Rp 28.000", "10/04/2023", R.drawable.wallet);
+
+        listData.add(data1);
+        listData.add(data2);
+        listData.add(data3);
+        listData.add(data4);
+        listData.add(data5);
+        listData.add(data6);
+
+        ListAdapter adapter = new ListAdapter(getActivity(), R.layout.single_list_item, listData);
+        listView.setAdapter(adapter);
+
+        return view;
     }
 }
