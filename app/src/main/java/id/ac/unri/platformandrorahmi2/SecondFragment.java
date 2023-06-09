@@ -67,13 +67,17 @@ public class SecondFragment extends Fragment {
         ListView listView = view.findViewById(R.id.listview);
         ArrayList<ListData> listData = new ArrayList<>();
 
-        ListData data1, data2, data3, data4, data5, data6;
+        ListData data1, data2, data3, data4, data5, data6, data7, data8, data9, data10;
         data1 = new ListData("Coffee", "Rp 18.000", "07/04/2023", R.drawable.coffee);
         data2 = new ListData("Groceries", "Rp 45.000", "07/04/2023", R.drawable.carrot);
         data3 = new ListData("Breakfast", "Rp 7.000", "08/04/2023", R.drawable.bread);
         data4 = new ListData("Cat Food", "Rp 20.000", "09/04/2023", R.drawable.kitty);
         data5 = new ListData("Stationery", "Rp 2.000", "10/04/2023", R.drawable.pen);
-        data6 = new ListData("Fuel", "Rp 28.000", "10/04/2023", R.drawable.wallet);
+        data6 = new ListData("Fuel", "Rp 28.000", "11/04/2023", R.drawable.wallet);
+        data7 = new ListData("Parking", "Rp 3.000", "11/04/2023", R.drawable.dollars);
+        data8 = new ListData("Lunch", "Rp 12.000", "12/04/2023", R.drawable.bread);
+        data9 = new ListData("Parking", "Rp 3.000", "12/04/2023", R.drawable.wallet);
+        data10 = new ListData("House Rent", "Rp 500.000", "12/04/2023", R.drawable.bill);
 
         listData.add(data1);
         listData.add(data2);
@@ -81,6 +85,10 @@ public class SecondFragment extends Fragment {
         listData.add(data4);
         listData.add(data5);
         listData.add(data6);
+        listData.add(data7);
+        listData.add(data8);
+        listData.add(data9);
+        listData.add(data10);
 
         ListAdapter adapter = new ListAdapter(getActivity(), R.layout.single_list_item, listData);
         listView.setAdapter(adapter);
