@@ -1,3 +1,1 @@
-# pbp-andro
-
-all icons and fonts credit to the owner
+all icons and fonts are credit to the owner
